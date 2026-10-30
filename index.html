@@ -1,94 +1,189 @@
-# Política de Privacidade — Energia Loop
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Política de Privacidade do jogo Energia Loop" />
 
-Última atualização: 30 de outubro de 2026
+  <title>Política de Privacidade - Energia Loop</title>
 
-Esta Política de Privacidade descreve como o aplicativo **Energia Loop**, desenvolvido por **SEU NOME/EMPRESA**, trata informações relacionadas aos seus usuários.
+  <style>
+    :root {
+      --bg: #07111f;
+      --card: #0d1b2d;
+      --card-2: #102438;
+      --text: #eaf8ff;
+      --muted: #9ab6c5;
+      --cyan: #35e7ff;
+      --purple: #8a5cff;
+      --border: #1d4f68;
+    }
 
-## 1. Informações coletadas
+    * {
+      box-sizing: border-box;
+    }
 
-O Energia Loop não exige a criação de uma conta própria do aplicativo.
+    html {
+      scroll-behavior: smooth;
+    }
 
-No entanto, o jogo utiliza serviços de terceiros que podem coletar ou processar determinados dados.
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background:
+        radial-gradient(circle at top, rgba(53, 231, 255, 0.08), transparent 35%),
+        linear-gradient(180deg, #07111f 0%, #040914 100%);
+      color: var(--text);
+      line-height: 1.7;
+    }
 
-### Google Play Games
+    .container {
+      width: min(920px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 48px 0 64px;
+    }
 
-O Energia Loop utiliza os Serviços do Google Play Games para recursos relacionados à experiência do jogador.
+    .header {
+      text-align: center;
+      margin-bottom: 36px;
+    }
 
-Dependendo da utilização desses serviços, o Google Play Games pode processar informações como:
+    .logo {
+      width: 72px;
+      height: 72px;
+      margin: 0 auto 18px;
+      border-radius: 22px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 34px;
+      font-weight: bold;
+      color: white;
+      background:
+        linear-gradient(135deg, var(--cyan), var(--purple));
+      box-shadow:
+        0 0 25px rgba(53, 231, 255, 0.3),
+        0 0 45px rgba(138, 92, 255, 0.2);
+    }
 
-- nome ou identidade de jogador;
-- ID do jogador;
-- informações relacionadas ao perfil do Google Play Games;
-- informações necessárias ao funcionamento dos serviços de jogos.
+    h1 {
+      margin: 0;
+      font-size: 2.2rem;
+      color: white;
+    }
 
-Essas informações são utilizadas para fornecer funcionalidades relacionadas aos Serviços do Google Play Games.
+    .subtitle {
+      margin-top: 8px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
 
-### Google AdMob
+    .card {
+      background: linear-gradient(
+        180deg,
+        rgba(16, 36, 56, 0.96),
+        rgba(9, 24, 39, 0.96)
+      );
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 28px;
+      margin-bottom: 20px;
+      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.25);
+    }
 
-O Energia Loop utiliza o Google AdMob para exibir anúncios.
+    h2 {
+      margin-top: 0;
+      margin-bottom: 14px;
+      font-size: 1.3rem;
+      color: var(--cyan);
+    }
 
-O Google Mobile Ads SDK pode coletar ou processar informações como:
+    h3 {
+      margin-top: 24px;
+      margin-bottom: 8px;
+      color: white;
+    }
 
-- localização aproximada, que pode ser estimada a partir do endereço IP;
-- interações com o aplicativo e com anúncios;
-- identificadores do dispositivo e identificadores de publicidade;
-- informações de diagnóstico e desempenho do aplicativo;
-- informações utilizadas para publicidade, análise, segurança e prevenção de fraude.
+    p {
+      margin: 10px 0;
+      color: #d6e7ef;
+    }
 
-Esses dados podem ser processados ou compartilhados pelo Google de acordo com suas próprias políticas de privacidade e serviços de publicidade.
+    ul {
+      margin: 10px 0 10px 22px;
+      padding: 0;
+    }
 
-## 2. Finalidade do uso dos dados
+    li {
+      margin: 6px 0;
+      color: #d6e7ef;
+    }
 
-Os dados tratados pelos serviços utilizados pelo Energia Loop podem ser utilizados para:
+    strong {
+      color: white;
+    }
 
-- fornecer funcionalidades do jogo;
-- fornecer recursos do Google Play Games;
-- exibir e medir anúncios;
-- analisar a utilização e o desempenho dos anúncios;
-- melhorar estabilidade e desempenho;
-- detectar fraude, abuso e problemas de segurança.
+    a {
+      color: var(--cyan);
+      text-decoration: none;
+    }
 
-## 3. Compartilhamento de dados
+    a:hover {
+      text-decoration: underline;
+    }
 
-O desenvolvedor do Energia Loop não vende informações pessoais dos usuários.
+    .footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.9rem;
+      padding-top: 18px;
+    }
 
-Determinados dados podem ser processados ou compartilhados com provedores de serviços utilizados pelo aplicativo, principalmente:
+    .highlight {
+      color: var(--cyan);
+    }
 
-- Google Play Games;
-- Google AdMob / Google Mobile Ads.
+    @media (max-width: 600px) {
+      .container {
+        width: min(100% - 20px, 920px);
+        padding-top: 28px;
+      }
 
-O tratamento realizado por esses serviços está sujeito às políticas e termos do Google.
+      .card {
+        padding: 20px;
+        border-radius: 16px;
+      }
 
-## 4. Segurança
+      h1 {
+        font-size: 1.7rem;
+      }
+    }
+  </style>
+</head>
 
-As transmissões realizadas pelos serviços Google utilizados pelo aplicativo são protegidas por mecanismos de segurança apropriados, incluindo criptografia durante a transmissão quando aplicável.
+<body>
+  <main class="container">
 
-## 5. Retenção e exclusão de dados
+    <header class="header">
+      <div class="logo">EL</div>
 
-O Energia Loop não mantém um sistema próprio de contas de usuário.
+      <h1>Política de Privacidade</h1>
 
-Dados tratados pelos Serviços do Google Play Games ou Google AdMob são administrados de acordo com as políticas de retenção e exclusão do Google e com as configurações disponíveis na Conta Google do usuário.
+      <p class="subtitle">
+        Energia Loop • Última atualização: 30 de outubro de 2026
+      </p>
+    </header>
 
-O usuário pode gerenciar informações relacionadas ao Google Play Games e outros serviços Google através das configurações da sua Conta Google.
+    <section class="card">
+      <h2>1. Introdução</h2>
 
-## 6. Privacidade de crianças
+      <p>
+        Esta Política de Privacidade descreve como o aplicativo
+        <strong>Energia Loop</strong>, desenvolvido por
+        <strong>SEU NOME/EMPRESA</strong>, trata informações relacionadas
+        aos seus usuários.
+      </p>
 
-O Energia Loop não é direcionado especificamente a crianças menores de 13 anos.
-
-O público-alvo declarado do aplicativo é composto por usuários com 13 anos ou mais.
-
-## 7. Serviços de terceiros
-
-O aplicativo utiliza serviços fornecidos pelo Google. Para saber mais sobre como o Google trata informações, consulte a Política de Privacidade do Google e as informações sobre como o Google utiliza dados em aplicativos e serviços parceiros.
-
-## 8. Alterações nesta política
-
-Esta Política de Privacidade poderá ser atualizada para refletir alterações no aplicativo, nos serviços utilizados ou em requisitos legais e de plataforma.
-
-Quando houver alterações relevantes, a data de atualização desta página será modificada.
-
-## 9. Contato
-
-Em caso de dúvidas sobre esta Política de Privacidade ou sobre o tratamento de dados relacionado ao Energia Loop, entre em contato:
-  
-**E-mail:** brendonbosqueti@gmail.com
+      <p>
+        Ao utilizar o Energia Loop, o usuário reconhece
